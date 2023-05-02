@@ -16,7 +16,7 @@
 }
 
 .robot-list > div {
-  display: flex;
+  display: row;
   flex-direction: column;
   align-items: center;
   padding: 20px;
@@ -127,4 +127,23 @@
   background-color: #0077ff;
   color: #fff;
  
+}
+
+.army-list,
+.robot-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.army-list div,
+.robot-list div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
 }

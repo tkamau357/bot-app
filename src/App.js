@@ -46,6 +46,10 @@ function App() {
           <div key={robot.id}>
             <img src={robot.image} alt={robot.name} />
             <h3>{robot.name}</h3>
+            <h3>Health: {robot.health}</h3>
+            <h3>Damage: {robot.damage}</h3>
+            <h3>Armor: {robot.armor}</h3>
+            <h3>Bot Class: {robot.bot_class}</h3>
             <button onClick={() => dischargeRobot(robot)}>x</button>
           </div>
         ))}
