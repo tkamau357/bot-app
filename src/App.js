@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './App.css';
 
 function App() {
   const [robots, setRobots] = useState([]);
@@ -39,16 +40,12 @@ function App() {
           <button onClick={() => enlistRobot(selectedRobot)}>Enlist</button>
         </div>
       )}
-
+      <h2>Your Army</h2>
       <div className="army-list">
-        <h2>Your Army</h2>
         {army.map(robot => (
           <div key={robot.id}>
             <img src={robot.image} alt={robot.name} />
             <h3>{robot.name}</h3>
-            <h2>{robot.health}</h2>
-            <h2>{robot.damage}</h2>
-            <h2>{robot.armor}</h2>
             <button onClick={() => dischargeRobot(robot)}>x</button>
           </div>
         ))}
@@ -59,9 +56,10 @@ function App() {
           <div key={robot.id} onClick={() => handleRobotClick(robot)}>
             <img src={robot.image} alt={robot.name} />
             <h2>{robot.name}</h2>
-            <h2>Health:{robot.health}</h2>
-            <h2>Damage:{robot.damage}</h2>
-            <h2>Armor:{robot.armor}</h2>
+            <h2>Health: {robot.health}</h2>
+            <h2>Damage: {robot.damage}</h2>
+            <h2>Armor: {robot.armor}</h2>
+            <h2>Bot Class: {robot.bot_class}</h2>
           </div>
         ))}
       </div>
