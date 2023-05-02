@@ -1,13 +1,9 @@
 # Bank of transactions
-#### For this project, you’ll be building out a React application that displays a list of your recent bank transactions, among other features, 24/04/23
+#### For this project, you’ll be building out a React application that displays a galactic web app that will allow them to browse through a list of robots, view a robot's details, and, enlist a bot into their army., 24/04/23
 #### By **John Thairu Kamau**
 
-![image](https://user-images.githubusercontent.com/123355748/234897312-ade43f1e-f49a-40d3-ad0c-13d3453e1d8e.png)
-
-
-
 ## Description
-Create a react application that can display a table of all transactions. Fill out and submit the form to add a new transaction. This should add the new transaction to the table *the new transaction does not have to be persisted to the backend*.Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
+Create a react application that can display profiles of all bots rendered in `BotCollection`. Add an individual bot to my army by clicking on it. The selected bot should render in the `YourBotArmy` component. The bot can be enlisted only **once**. The bot **does not** disappear from the `BotCollection`. Release a bot from my army by clicking on it. The bot disappears from the `YourBotArmy` component. Discharge a bot from their service forever, by clicking the red button marked "x", which would delete the bot both from the backend and from the `YourBotArmy` on the frontend.
 
 ## Setup/Installation Requirements
 * In your project directory, create a db.json file and use this dataLinks to an external site. for your server DB.
