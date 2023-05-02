@@ -8,7 +8,7 @@ Create a react application that can display profiles of all bots rendered in `Bo
 ## Setup/Installation Requirements
 * In your project directory, create a db.json file and use this dataLinks to an external site. for your server DB.
 * Run this command to get the backend started: json-server --watch db.json --port 8001 (at src folder directory).
-* Test your server by visiting this route in the browser:https://tkamau357.github.io/transaction-app/
+* Test your server by visiting this route in the browser:https://bot-app-dun.vercel.app/
 
 ## Technologies Used
 Technologies used in this application are HTML, CSS, React and javascript.
