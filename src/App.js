@@ -59,14 +59,12 @@ function App() {
           <div key={robot.id} onClick={() => handleRobotClick(robot)}>
             <img src={robot.image} alt={robot.name} />
             <h2>{robot.name}</h2>
-            <h2>{robot.health}</h2>
-            <h2>{robot.damage}</h2>
-            <h2>{robot.armor}</h2>
+            <h2>Health:{robot.health}</h2>
+            <h2>Damage:{robot.damage}</h2>
+            <h2>Armor:{robot.armor}</h2>
           </div>
         ))}
       </div>
-      
-      
     </div>
   );
 }
